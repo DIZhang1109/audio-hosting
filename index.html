@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
@@ -13,5 +13,118 @@
     </audio>
 
     <p>或者您可以直接下载文件：<a href="assets/第一回.m4a">下载音频</a></p>
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>我的音频播放列表 - Bulma 风格</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+
+    <style>
+      .audio-box audio {
+        width: 100%; /* 让音频播放器充满 box */
+        display: block; /* 确保它独占一行 */
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <div class="has-text-centered mb-6">
+          <h1 class="title is-2 has-text-primary">🎧 我的音频文件列表</h1>
+          <p class="subtitle is-5 has-text-grey-dark">
+            使用 Bulma 框架美化，您可以直接收听和分享。
+          </p>
+        </div>
+
+        <div class="columns is-multiline is-centered">
+          <div
+            class="column is-full-mobile is-two-thirds-tablet is-one-third-desktop"
+          >
+            <div class="box has-background-white-ter audio-box">
+              <p class="title is-4">第一段音频：项目介绍</p>
+              <p class="subtitle is-6 has-text-info">文件大小：1.2MB / 45秒</p>
+              <audio controls>
+                <source src="assets/第一回.m4a" type="audio/mp4" />
+                您的浏览器不支持音频播放。
+              </audio>
+            </div>
+          </div>
+
+          <div
+            class="column is-full-mobile is-two-thirds-tablet is-one-third-desktop"
+          >
+            <div class="box has-background-white-ter audio-box">
+              <p class="title is-4">第二段音频：关键技术点</p>
+              <p class="subtitle is-6 has-text-info">
+                文件大小：2.5MB / 1分30秒
+              </p>
+              <audio controls>
+                <source src="assets/audio2.m4a" type="audio/mp4" />
+                您的浏览器不支持音频播放。
+              </audio>
+            </div>
+          </div>
+
+          <div
+            class="column is-full-mobile is-two-thirds-tablet is-one-third-desktop"
+          >
+            <div class="box has-background-white-ter audio-box">
+              <p class="title is-4">第三段音频：用户反馈</p>
+              <p class="subtitle is-6 has-text-info">文件大小：0.9MB / 30秒</p>
+              <audio controls>
+                <source src="assets/audio3.m4a" type="audio/mp4" />
+                您的浏览器不支持音频播放。
+              </audio>
+            </div>
+          </div>
+
+          <div
+            class="column is-full-mobile is-two-thirds-tablet is-one-third-desktop"
+          >
+            <div class="box has-background-white-ter audio-box">
+              <p class="title is-4">第四段音频：未来计划 A</p>
+              <p class="subtitle is-6 has-text-info">
+                文件大小：3.1MB / 2分0秒
+              </p>
+              <audio controls>
+                <source src="assets/audio4.m4a" type="audio/mp4" />
+                您的浏览器不支持音频播放。
+              </audio>
+            </div>
+          </div>
+
+          <div
+            class="column is-full-mobile is-two-thirds-tablet is-one-third-desktop"
+          >
+            <div class="box has-background-white-ter audio-box">
+              <p class="title is-4">第五段音频：未来计划 B</p>
+              <p class="subtitle is-6 has-text-info">文件大小：1.5MB / 50秒</p>
+              <audio controls>
+                <source src="assets/audio5.m4a" type="audio/mp4" />
+                您的浏览器不支持音频播放。
+              </audio>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          使用 <a href="https://bulma.io/">Bulma</a> 构建。音频由
+          <a href="#">您的名字/团队名</a> 提供。
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
